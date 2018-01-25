@@ -49,7 +49,7 @@ class Game
           puts "NO WAY"
         else
           col_index -=1
-          board.update(row_index,col_index,"z")
+          @board.update(row_index,col_index,"z")
         end
         puts
         @board.display()
@@ -59,8 +59,16 @@ class Game
     end
   end
 
-  def end?
-    
-  end
+  def end?()
+    verif_row = @cases[0].each { |row| row == "z"}
+    verif_row = @cases[1].each { |row| row == "z"}
+    verif_row = @cases[2].each { |row| row == "z"}
 
+    verif_col = @cases.map { |col| col[0] == "z"}
+    verif_col = @cases.map { |col| col[1] == "z"}
+    verif_col = @cases.map { |col| col[2] == "z"}
+
+    @cases[0][0] = @cases[1][1] = @cases[2][2]
+    @cases[2][0] = @cases[1][1] = @cases[1][2]
+  end
 end
