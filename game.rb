@@ -51,6 +51,7 @@ class Game
           @board.update(row_index,col_index,"z")
         end
         puts
+        puts %x{clear}
         @board.display()
         puts
       end
