@@ -1,5 +1,6 @@
 require_relative 'game'
 
+puts %x{clear}
 puts
 puts
 puts "                *********************************"
