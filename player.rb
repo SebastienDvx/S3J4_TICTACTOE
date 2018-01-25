@@ -6,4 +6,7 @@ class Player
     @player_sign = player_sign
   end
 
+  def switch()
+  end
+
 end

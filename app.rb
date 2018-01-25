@@ -2,11 +2,11 @@ require_relative 'game'
 
 puts
 puts
-puts "            *********************************"
-puts "            *                               *"
-puts "            *         TIC TAC TOE           *"
-puts "            *                               *"
-puts "            *********************************"
+puts "                *********************************"
+puts "                *                               *"
+puts "                *         TIC TAC TOE           *"
+puts "                *                               *"
+puts "                *********************************"
 
 puts
 puts

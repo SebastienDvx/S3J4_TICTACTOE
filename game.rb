@@ -35,7 +35,6 @@ class Game
     while true
       i += 1
       puts "----------- Tour #{i} ------------"
-      # saisie_utilisateur = gets.chomp
       puts
       print "Veuillez entrer la ligne   (1 - 2 - 3) : "
       row_index = gets.chomp.to_i
@@ -55,7 +54,7 @@ class Game
         @board.display()
         puts
       end
-      # p saisie_utilisateur
+      # player.switch()
     end
   end
 
@@ -71,4 +70,5 @@ class Game
     @cases[0][0] = @cases[1][1] = @cases[2][2]
     @cases[2][0] = @cases[1][1] = @cases[1][2]
   end
+
 end
